@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="description" content="An exercise to develop a sign up form with different elements">
+<meta name="author" content="Alfonso Jimenez">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signup form</title>
+<link rel="stylesheet" type="text/css" href="css/signup_form.css">
+</head>
+
+
+<body>
+
+<header class="header">
+	<H1>Sign Up Form</H1>
+</header>
+
+<form id="signup" name="signup" method="post">
+<div class="personal_data">
+<label for="firstname">First name</label>	
+<input id="firstname" name="firstname" type="text" required placeholder="No numbers or symbols" pattern="[A-Za-z]{2,128}">
+<br/>
+<label for="lastname">Last name</label>
+<input id="lastname" name="lastname" type="text" required placeholder="No numbers or symbols" pattern="[A-Za-z]{2,128}">
+<br/>
+<label for="email">E-mail</label>
+<input id="email" name="email" type="email" required placeholder="Enter a valid e-mail address myemail@web.com" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,5}$">
+<br/>
+<label for="birthdate">Birthdate</label>
+<input id="birthdate" name="birthdate" type="date" required placeholder="dd/mm/yyyy" pattern="\d{1,2}/\d{1,2}/\d{4}">
+<br/>
+</div>
+
+<div class="preferences">
+	<label for="favourite_sport">Favourite sport</label>
+    <select id="favourite_sport" name="favourite_sport">
+    	<option value="athletics">Athletics</option>
+    	<option value="baseball">Baseball</option>
+    	<option value="basketball">Basketball</option>
+    	<option value="bowling">Bowling</option>
+    	<option value="cycling">Cycling</option>
+    	<option value="dancing">Dancing</option>
+    	<option value="gymnastics">Gymnastics</option>
+    	<option value="soccer">Soccer</option>
+    	<option value="swimming">Swimming</option>
+    	<option value="tennis">Tennis</option>
+    	<option value="volleyball">Volleyball</option>
+    	<option value="weightlifting">Weightlifting</option>
+    </select>
+    <br/>
+    <label for="bio">Bio</label>
+    <textarea id="bio" name="bio" rows="2" cols="63" placeholder="Write a small bio about you..."></textarea>
+    <br/>
+</div>
+
+<div class="buttons">
+    <input id="btn_submit" type="submit" value="Sign Up">
+    <input id="btn_reset" type="reset" value="Reset">
+</div>
+</form>
+
+</body>
+
+
+</html>

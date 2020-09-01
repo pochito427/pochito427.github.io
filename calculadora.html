@@ -1,0 +1,128 @@
+<HTML>
+   <HEAD>
+   <TITLE>Taller Desafío</TITLE>
+   <script language="javascript1.3">
+       
+       function addChar(input, character)
+       {
+        if(input.value == null || input.value == "0")
+          input.value = character;
+        else
+          input.value += character;
+        }
+
+        
+
+        function changeSign(input)
+        {
+         // could use input.value = 0 - input.value, but let's show off substring
+         if(input.value.substring(0, 1) == "-")
+	   input.value = input.value.substring(1, input.value.length);
+         else
+	   input.value = "-" + input.value;
+        }
+
+        function compute(form) 
+        {
+         
+	 form.display.value = eval(form.display.value);
+         
+         if((isNaN(form.display.value)==true)||(isFinite(form.display.value)==false)){
+            alert("ERROR! No es un número! / Posible división por cero!");
+            form.display.value=0;
+            
+         }
+         
+        }
+
+        function deleteChar(input)
+        {
+          input.value = input.value.substring(0, input.value.length - 1);
+        }
+
+        
+   </script> 
+   </HEAD>
+   <BODY bgcolor="#FFFFDD">
+   
+   <FORM>
+   <TABLE BORDER = 1>
+   <TR>
+   <TD COLSPAN=4>
+   <INPUT TYPE=text NAME="display" VALUE="0">
+   </TD>
+   </TR>
+   <TR>
+   <TD>
+   <INPUT TYPE=button NAME="7" VALUE=" 7 " onClick="addChar(this.form.display, '7')">
+   </TD>
+   <TD>
+   <INPUT TYPE=button NAME="8" VALUE=" 8 " onClick="addChar(this.form.display, '8')">
+   </TD>
+   <TD>
+   <INPUT TYPE=button NAME="9" VALUE=" 9 " onClick="addChar(this.form.display, '9')">
+   </TD>
+   <TD>
+   <INPUT TYPE=button NAME="+" VALUE=" + " onClick="addChar(this.form.display, '+')">
+   </TD>
+   </TR>
+   <TR>
+   <TD>
+   <INPUT TYPE=button NAME="4" VALUE=" 4 " onClick="addChar(this.form.display, '4')"> 
+   </TD>
+   <TD>
+   <INPUT TYPE=button NAME="5" VALUE=" 5 " onClick="addChar(this.form.display, '5')">
+   </TD>
+   <TD>
+   <INPUT TYPE=button NAME="6" VALUE=" 6 " onClick="addChar(this.form.display, '6')">
+   </TD>
+   <TD>
+   <INPUT TYPE=button NAME="-" VALUE="  -  " onClick="addChar(this.form.display, '-')">
+   </TD>
+   </TR>
+   <TR>
+   <TD>
+   <INPUT TYPE=button NAME="1" VALUE=" 1 " onClick="addChar(this.form.display, '1')">
+   </TD>
+   <TD>
+   <INPUT TYPE=button NAME="2" VALUE=" 2 " onClick="addChar(this.form.display, '2')">
+   </TD>
+   <TD>
+   <INPUT TYPE=button NAME="3" VALUE=" 3 " onClick="addChar(this.form.display, '3')"> 
+   </TD>
+   <TD>
+   <INPUT TYPE=button NAME="*" VALUE=" * " onClick="addChar(this.form.display, '*')">
+   </TD>
+   </TR>
+   <TR>
+   <TD>
+   <INPUT TYPE=button NAME="0" VALUE=" 0 " onClick="addChar(this.form.display, '0')">
+   </TD>
+   <TD>
+   <INPUT TYPE=button NAME="C" VALUE=" C " onClick="this.form.display.value = 0 ">
+   </TD>
+   <TD>
+   <INPUT TYPE=button NAME="CE" VALUE="CE" onClick="this.form.display.value = 0 ">
+   </TD>
+   <TD>
+   <INPUT TYPE=button NAME="/" VALUE="  /  " onClick="addChar(this.form.display, '/')">
+   </TD>
+   </TR>
+   <TR>
+   <TD>
+   <INPUT TYPE=button NAME="sign" VALUE="+/-" onClick="changeSign(this.form.display)">
+   </TD>
+   <TD>
+   <INPUT TYPE=button NAME="delete" VALUE="<-" onClick="deleteChar(this.form.display)">
+   </TD>
+   <TD>
+   <INPUT TYPE=button NAME="decimal" VALUE="  .  " onClick="addChar(this.form.display, '.')">
+   </TD>
+   <INPUT TYPE=button NAME="=" VALUE=" = " onClick="compute(this.form)" >
+   <TD>
+   </TD>
+   </TR>
+   </TABLE>
+   </FORM>
+   </BODY>
+   </HTML>

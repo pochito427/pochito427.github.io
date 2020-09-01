@@ -1,0 +1,59 @@
+input:hover{
+	background-color: #00ff00;
+}
+
+input:focus{
+	background-color: #00ffff;
+}
+
+textarea:hover{
+	background-color: #00ff00;
+}
+
+textarea:focus{
+	background-color: #00ffff;
+}
+
+.personal_data{
+	background-color: yellow;
+	margin: auto;
+	width: 60%;
+    padding: 10px;
+    text-align: center;
+}
+
+.preferences{
+	background-color: blue;
+	margin: auto;
+	width: 60%;
+    padding: 10px;
+     text-align: center;
+}
+
+.buttons{
+	background-color: red;
+	margin: auto;
+	width: 60%;
+    padding: 10px;
+     text-align: center;
+}
+
+label{
+	display: inline-block;
+}
+
+label:first-letter{
+	font-size: 200%;
+	color: #00ff00;
+}
+
+h1:first-letter{
+	font-size: 200%;
+	color: #ff0000;
+}
+
+.center{
+	margin: auto;
+	width: 60%;
+    padding: 10px;
+}

@@ -1,0 +1,18 @@
+Pseudo-classes get regular elements but with certain conditions when they are under a particular state, structure or validation.
+Examples of pseudo-classes:
+:active
+:hover
+:nth-child
+:disabled
+
+Pseudo-elements are those which let select logical elements to be defined which are not actually in the document element tree and may only be applied to external and document-level contexts, anyway, they only apply to style specified parts of an element or a document.
+Examples of pseudo-elements:
+::first-line
+::first-letter
+::before
+::after
+
+References:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+https://developer.mozilla.org/en/docs/Web/CSS/Pseudo-elements
+https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/

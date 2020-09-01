@@ -1,0 +1,114 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Small screens (default) */
+html { font-size: 100%; }
+
+.header{
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 48rem;
+  width: 90%;
+}
+
+.team-iron-man, .team-cap 
+{
+	width: 100%;
+	-webkit-filter: contrast(100%);
+	filter: contrast(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.team-iron-man:hover
+{
+	-webkit-filter: contrast(150);
+	filter: contrast(150);
+}
+
+.team-cap:hover{
+	-webkit-filter: contrast(50);
+	filter: contrast(50);
+}
+
+.screen {
+  background-color: rgba(0,0,0,0);
+  height: 130px;
+  width: 250px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1000;
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+}
+
+.screen:hover
+{
+  opacity: 1
+}
+
+.screen:hover .title {
+  margin-left: 0;
+}
+
+.title
+{
+  margin-top: 0;
+  text-align: center;
+  color: #00f;
+  font-family: arial, helvetica, sans-serif;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+
+/* Medium screens (640px) */
+@media (min-width: 640px) { 
+  html { font-size: 112%; }
+  .column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .column.full { width: 100%; }
+  .column.two-thirds { width: 66.7%; }
+  .column.half { width: 50%; }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 25%; }
+  .column.flow-opposite { float: right; }  
+}
+
+/* Large screens (1024px) */
+@media (max-width: 1120px) and (min-width: 1024px) { 
+  html { font-size: 120%; }
+}

@@ -1,0 +1,80 @@
+#main_header{
+	background-color: #ffc600;
+}
+
+#images{
+	background-color: #ffffff;
+	margin: -15px 0px;
+}
+
+#personal_data{
+	background-color: #05357a;
+	color: white;
+	font-weight: bold;
+	margin: 20px 0px;
+    padding: 1px;
+}
+
+body{
+	font-family: Arial, sans-serif;
+}
+
+section{
+	margin: 5px;
+}
+
+a:link{
+	color: green;
+	font-weight: bold;
+}
+
+a:hover {
+    background: yellow;
+    font-weight: bold;
+ }
+
+a:visited{
+	color: red;
+}
+
+h1{
+	font-weight: bold;
+	font-style: oblique;
+	font-family: Brush Script MT, cursive;
+}
+
+h3{
+	font-weight: bold;
+	text-decoration: overline underline;
+}
+
+h4{
+	font-weight: bold;
+	font-style: italic;
+}
+
+ul{
+	list-style-image: url("../img/terminal.png");
+}
+
+li{
+	padding: 3px;
+  	margin-bottom: 5px;
+}
+
+li:nth-of-type(even) {
+  color: #0000ff;
+ }
+
+li:nth-of-type(odd) {
+  color: #05357a;
+}
+
+a[href^="tel:"], a[href^="mailto:"] {
+  color: white;
+  text-decoration: none;
+}
+
+footer{
+	font-weight:bold;
+}

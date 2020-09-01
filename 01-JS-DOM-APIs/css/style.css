@@ -1,0 +1,22 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          border-radius: 10px;
+          border-color: #ffffff;
+          font-size: 20px;
+}
+
+
+body, html{
+ margin:0px;
+ padding:0px;
+}
+
+section{
+	text-align: center;
+}
+
+section.hidden{
+    visibility : hidden;
+}
